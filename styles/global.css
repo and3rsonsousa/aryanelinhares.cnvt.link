@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app {
+	@apply grid min-h-screen place-content-center p-4;
+}
+
+.container {
+	@apply mx-auto max-w-md;
+}
+
+.backdrop {
+	@apply fixed inset-0 z-0;
+}
+.content {
+	@apply relative z-10 w-full space-y-12;
+}
+
+.header {
+	@apply space-y-4;
+}
+.header h1 {
+	@apply mb-8 mt-4 text-center text-4xl font-bold;
+}
+
+.header h3 {
+	@apply my-4 text-center text-xl font-medium;
+}
+
+.button {
+	@apply my-2 flex w-full items-center justify-center rounded-md bg-brand-5 py-4 px-8 font-medium ring-1 ring-black/5 transition duration-300 hover:bg-brand-1 active:scale-95 active:bg-brand-2 active:duration-75;
+}
+
+.button-primary {
+	@apply my-4 bg-brand-3 py-4 text-xl text-white  hover:bg-brand-4 active:bg-brand-1;
+}
+
+.button-alternative {
+	@apply my-4 bg-brand-4 py-4 text-xl text-white  hover:bg-brand-4 active:bg-brand-4 active:duration-75;
+}
+.group > .button:first-child {
+	@apply mr-0 rounded-r-none;
+}
+
+.group > .button:last-child {
+	@apply ml-0 rounded-l-none;
+}
+
+.footer {
+	@apply flex justify-center gap-4;
+}
+
+.icon-link {
+	@apply grid h-12 w-12 place-content-center rounded-full bg-transparent p-0 text-xl text-brand-3 ring-0 transition duration-300 hover:bg-brand-1 hover:text-brand-4 active:bg-brand-1;
+}
+
+.input-radio {
+	@apply flex h-full w-full items-center justify-center  rounded-xl bg-white p-4 text-center leading-none ring-1 ring-black/5 transition;
+}
+input[type="radio"] {
+	@apply hidden;
+}
+.input-radio h5 {
+	@apply text-xl font-bold leading-none;
+}
+.input-radio span {
+	@apply text-xs font-medium uppercase tracking-wider;
+}
+
+input:checked + .input-radio {
+	@apply bg-brand-3 text-white;
+}
