@@ -22,18 +22,18 @@ export function getAppData() {
 					"https://api.whatsapp.com/send/?phone=5588992358601&text&app_absent=0",
 				type: "primary",
 			},
-			{
-				name: "Menu da Páscoa 2022",
-				url: "menu-pascoa-2022.pdf",
-				download: true,
-				type: "alternative",
-			},
-			{
-				name: "Encomenda da Páscoa",
-				url: "pascoa-2022",
-				redirect:
-					"https://api.whatsapp.com/send/?phone=5588992476767&text&app_absent=0",
-			},
+			// {
+			// 	name: "Menu da Páscoa 2022",
+			// 	url: "menu-pascoa-2022.pdf",
+			// 	download: true,
+			// 	type: "alternative",
+			// },
+			// {
+			// 	name: "Encomenda da Páscoa",
+			// 	url: "pascoa-2022",
+			// 	redirect:
+			// 		"https://api.whatsapp.com/send/?phone=5588992476767&text&app_absent=0",
+			// },
 			{
 				name: "Faça sua Encomenda",
 				url: "encomenda",
